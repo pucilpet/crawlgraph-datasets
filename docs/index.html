@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CrawlGraph Datasets - open Common Crawl backlink-overlap data</title>
+<meta name="description" content="Free open datasets from Common Crawl's hyperlink graph: which domains link to every major tool in a category. Backlink-overlap studies as CSV and JSON.">
+<link rel="canonical" href="https://pucilpet.github.io/crawlgraph-datasets/">
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, Segoe UI, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 760px; margin: 0 auto; padding: 40px 20px; color: #1a1a1a; }
+  h1 { font-size: 34px; letter-spacing: -0.02em; margin-bottom: 6px; }
+  .sub { color: #555; font-size: 17px; margin-top: 0; }
+  .card { border: 1px solid #e5e5e5; border-radius: 12px; padding: 20px 22px; margin: 22px 0; }
+  .card h2 { margin: 0 0 6px; font-size: 20px; }
+  .stat { color: #444; font-size: 15px; }
+  a { color: #4b2bd6; }
+  .dl a { display: inline-block; margin-right: 14px; font-weight: 600; }
+  footer { margin-top: 40px; color: #666; font-size: 14px; border-top: 1px solid #eee; padding-top: 18px; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Dataset",
+      "@id": "https://pucilpet.github.io/crawlgraph-datasets/#seo-tools",
+      "name": "Domains that link to every major SEO tool",
+      "description": "Referring domains linking to 6 or more of 8 major SEO tools (Ahrefs, Semrush, Moz, Majestic, Serpstat, SE Ranking, SpyFu, Surfer), from Common Crawl's open hyperlink graph, ranked by overlap and authority.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "isAccessibleForFree": true,
+      "creator": { "@type": "Organization", "name": "CrawlGraph", "url": "https://crawlgraph.com" },
+      "sameAs": "https://crawlgraph.com/blog/who-links-to-every-seo-tool",
+      "distribution": [
+        { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://crawlgraph.com/data/seo-tools-universal-linkers.csv" },
+        { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://crawlgraph.com/data/seo-tools-universal-linkers.json" }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://pucilpet.github.io/crawlgraph-datasets/#crm",
+      "name": "Domains that link to every major CRM",
+      "description": "Referring domains linking to 6 or more of 8 major CRMs (HubSpot, Zoho, Pipedrive, Freshworks, Close, Copper, Attio, Salesflare), from Common Crawl's open hyperlink graph, ranked by overlap and authority.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "isAccessibleForFree": true,
+      "creator": { "@type": "Organization", "name": "CrawlGraph", "url": "https://crawlgraph.com" },
+      "sameAs": "https://crawlgraph.com/blog/who-links-to-every-crm",
+      "distribution": [
+        { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://crawlgraph.com/data/crm-universal-linkers.csv" },
+        { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://crawlgraph.com/data/crm-universal-linkers.json" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<h1>CrawlGraph Datasets</h1>
+<p class="sub">Open datasets from Common Crawl's hyperlink graph, published by <a href="https://crawlgraph.com/?utm_source=github-pages&utm_medium=dataset&utm_campaign=datasets">CrawlGraph</a>. Each is a backlink-overlap study: which domains link to every major tool in a category. Free to reuse with attribution.</p>
+
+<div class="card">
+  <h2>Who links to every major SEO tool</h2>
+  <p class="stat">8 tools analyzed, 9,687 unique linkers, 37 link to all 8 (mostly trade media and roundups).</p>
+  <p class="dl">
+    <a href="https://crawlgraph.com/data/seo-tools-universal-linkers.csv">CSV</a>
+    <a href="https://crawlgraph.com/data/seo-tools-universal-linkers.json">JSON</a>
+    <a href="https://crawlgraph.com/blog/who-links-to-every-seo-tool?utm_source=github-pages&utm_medium=dataset&utm_campaign=datasets">Read the study</a>
+  </p>
+</div>
+
+<div class="card">
+  <h2>Who links to every major CRM</h2>
+  <p class="stat">8 CRMs analyzed, 9,910 unique linkers, only 2 link to all 8 (Zapier and RingCentral, integration hubs).</p>
+  <p class="dl">
+    <a href="https://crawlgraph.com/data/crm-universal-linkers.csv">CSV</a>
+    <a href="https://crawlgraph.com/data/crm-universal-linkers.json">JSON</a>
+    <a href="https://crawlgraph.com/blog/who-links-to-every-crm?utm_source=github-pages&utm_medium=dataset&utm_campaign=datasets">Read the study</a>
+  </p>
+</div>
+
+<p>Want the same list for your own niche? Run a free backlink gap analysis (no signup) at <a href="https://crawlgraph.com/gap-analysis?utm_source=github-pages&utm_medium=dataset&utm_campaign=datasets">crawlgraph.com/gap-analysis</a>: your domain plus a few competitors, and you get the domains linking to them but not you, ranked by authority.</p>
+
+<footer>
+  Data derived from <a href="https://commoncrawl.org/">Common Crawl</a> (open data). Built by CrawlGraph. Source and raw files: <a href="https://github.com/pucilpet/crawlgraph-datasets">github.com/pucilpet/crawlgraph-datasets</a>.
+</footer>
+</body>
+</html>

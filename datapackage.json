@@ -1,0 +1,48 @@
+{
+  "name": "crawlgraph-datasets",
+  "title": "CrawlGraph Datasets",
+  "description": "Open backlink-overlap datasets from Common Crawl's hyperlink graph, published by crawlgraph.com. Each dataset lists the domains that link to most of the tools in a category (the niche's universal linkers).",
+  "homepage": "https://crawlgraph.com",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Creative Commons Attribution 4.0"
+    }
+  ],
+  "sources": [
+    { "title": "Common Crawl hyperlink graph", "path": "https://commoncrawl.org/web-graphs" }
+  ],
+  "resources": [
+    {
+      "name": "seo-tools-universal-linkers",
+      "path": "data/seo-tools-universal-linkers.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "title": "Domains that link to every major SEO tool",
+      "description": "Referring domains linking to 6 or more of 8 major SEO tools (Ahrefs, Semrush, Moz, Majestic, Serpstat, SE Ranking, SpyFu, Surfer), ranked by overlap and authority.",
+      "schema": {
+        "fields": [
+          { "name": "domain", "type": "string", "description": "A domain that links to several of the tools." },
+          { "name": "links_to_n_of_8", "type": "integer", "description": "How many of the 8 tools it links to." },
+          { "name": "cg_authority", "type": "integer", "description": "CrawlGraph authority score for the linking domain, 0 to 100." }
+        ]
+      }
+    },
+    {
+      "name": "crm-universal-linkers",
+      "path": "data/crm-universal-linkers.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "title": "Domains that link to every major CRM",
+      "description": "Referring domains linking to 6 or more of 8 major CRMs (HubSpot, Zoho, Pipedrive, Freshworks, Close, Copper, Attio, Salesflare), ranked by overlap and authority.",
+      "schema": {
+        "fields": [
+          { "name": "domain", "type": "string", "description": "A domain that links to several of the CRMs." },
+          { "name": "links_to_n_of_8", "type": "integer", "description": "How many of the 8 CRMs it links to." },
+          { "name": "cg_authority", "type": "integer", "description": "CrawlGraph authority score for the linking domain, 0 to 100." }
+        ]
+      }
+    }
+  ]
+}
