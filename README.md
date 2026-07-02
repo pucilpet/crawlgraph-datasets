@@ -10,6 +10,7 @@ Each dataset is a backlink-overlap study: for a category of tools, it maps which
 |------|----------|---------|----------|
 | [`data/seo-tools-universal-linkers.csv`](data/seo-tools-universal-linkers.csv) / [`.json`](data/seo-tools-universal-linkers.json) | 8 major SEO tools (ahrefs, semrush, moz, majestic, serpstat, se ranking, spyfu, surfer) | 9,687 linkers; 37 link to all 8; mostly trade media + roundups | [who links to every SEO tool](https://crawlgraph.com/blog/who-links-to-every-seo-tool?utm_source=github&utm_medium=dataset&utm_campaign=crawlgraph-datasets) |
 | [`data/crm-universal-linkers.csv`](data/crm-universal-linkers.csv) / [`.json`](data/crm-universal-linkers.json) | 8 major CRMs (hubspot, zoho, pipedrive, freshworks, close, copper, attio, salesflare) | 9,910 linkers; only 2 link to all 8 (Zapier, RingCentral); integration-driven | [only 2 domains link to every CRM](https://crawlgraph.com/blog/who-links-to-every-crm?utm_source=github&utm_medium=dataset&utm_campaign=crawlgraph-datasets) |
+| [`data/ai-agent-universal-linkers.csv`](data/ai-agent-universal-linkers.csv) / [`.json`](data/ai-agent-universal-linkers.json) | 8 AI agent frameworks (langchain, llamaindex, crewai, dify, flowise, langflow, autogpt, superagi) | 7,508 linkers; 5 link to all 8 (github, substack, analyticsvidhya + 2 product sites); dev platforms + young agent directories | [only 5 domains link to every AI agent framework](https://crawlgraph.com/blog/who-links-to-every-ai-agent-framework?utm_source=github&utm_medium=dataset&utm_campaign=crawlgraph-datasets) |
 
 ## Schema
 
