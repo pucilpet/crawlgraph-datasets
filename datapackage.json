@@ -97,6 +97,33 @@
      }
     ]
    }
+  },
+  {
+   "name": "fintech-universal-linkers",
+   "path": "data/fintech-universal-linkers.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "title": "Domains that link to every major fintech app",
+   "description": "Referring domains linking to 6 or more of 8 major fintech apps (Stripe, Wise, Revolut, Plaid, Brex, Ramp, Mercury, Chime), ranked by overlap and authority.",
+   "schema": {
+    "fields": [
+     {
+      "name": "domain",
+      "type": "string",
+      "description": "A domain that links to several of the frameworks."
+     },
+     {
+      "name": "links_to_n_of_8",
+      "type": "integer",
+      "description": "How many of the 8 fintech apps it links to."
+     },
+     {
+      "name": "cg_authority",
+      "type": "integer",
+      "description": "CrawlGraph authority score for the linking domain, 0 to 100."
+     }
+    ]
+   }
   }
  ]
 }
