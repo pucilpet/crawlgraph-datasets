@@ -27,7 +27,7 @@ Each CSV lists every domain linking to 6 or more of the 8 tools, sorted by overl
 
 ## How it is built
 
-CrawlGraph queries Common Crawl's open hyperlink graph (roughly 120M domains, 4.4B links, refreshed quarterly) directly with DuckDB, then intersects the referring domains of each tool in a category. No proprietary index, just open data. Platform and CDN noise (amazonaws, cloudfront, etc.) is filtered out.
+CrawlGraph queries Common Crawl's open hyperlink graph with DuckDB, then intersects referring-domain lists for the selected tools. These published studies are snapshots: graph size, coverage and available releases change over time. The studies filter platform and CDN noise; consult each write-up for its method and category-specific results.
 
 ## Turn a dataset into a research shortlist
 
