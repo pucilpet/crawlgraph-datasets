@@ -23,7 +23,14 @@ Each dataset is a referring-domain overlap study: for a selected category of too
 | `links_to_n_of_8` | how many of the 8 tools it links to (higher = more universal) |
 | `cg_authority` | CrawlGraph authority score (0-100) for the linking domain |
 
-Each CSV lists every domain linking to 6 or more of the 8 tools, sorted by overlap then authority. The JSON adds the per-tool subject stats (referring-domain counts and authority) plus the headline numbers.
+Each CSV lists the exported domains with overlap of 6 or more of the 8 tools, sorted by overlap then authority. JSON contains per-tool subject data and linker rows. The published JSON schemas differ:
+
+| JSON files | Linker overlap field | Linker authority field | Headline `stats` object |
+| --- | --- | --- | --- |
+| SEO tools, CRM | `tools` | `authority` | Present |
+| AI agent, fintech | `links_to_n_of_8` | `cg_authority` | Not present |
+
+Use the CSV columns above for a consistent spreadsheet import. When reading JSON, select the fields for that file rather than assuming the first dataset's schema applies to all four.
 
 ## How it is built
 
